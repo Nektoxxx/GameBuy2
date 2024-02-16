@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GameBuy</title>
+</head>
+
+<body>
+    <section class="modal__container" id="openModal_Authoriz">
+        <form class="modal__collaboration modal">
+            <div class="modal_header">
+                <h2>Авторизация</h2>
+                <a class="modal_close" href="#">X</a>
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Nickname *</div>
+                <input type="text" class="modal__input" placeholder="user_277">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Почта *</div>
+                <input type="text" class="modal__input" placeholder="email@mail.com">
+            </div>
+            <input type="submit" class="btn" value="Войти">
+            <a href="#openModal_Registr" class="btn buttons__btn_right"><span>Регистрация</span> </a>
+        </form>
+    </section>
+
+    <section class="modal__container" id="openModal_Registr">
+        <form class="modal__collaboration modal">
+            <div class="modal_header">
+                <h2>Регистрация</h2>
+                <a class="modal_close" href="#">X</a>
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Nickname *</div>
+                <input type="text" class="modal__input" placeholder="user_277">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Почта *</div>
+                <input type="text" class="modal__input" placeholder="email@mail.com">
+            </div>
+            <input type="submit" class="btn" value="Зарегистрироваться">
+            <a href="#openModal_Authoriz" class="btn buttons__btn_right"><span>Авторизация</span> </a>
+        </form>
+    </section>
+
+    <section class="modal__container" id="openModalProduct">
+        <form class="modal__collaboration modal">
+            <div class="modal_header">
+                <h2>Подать заявку</h2>
+                <a class="modal_close" href="#">X</a>
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Имя и Фамилия *</div>
+                <input type="text" class="modal__input" placeholder="Иванов Иван">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Ссылка для связи *</div>
+                <input type="text" class="modal__input" placeholder="https://web.telegram.org/a/#00000000">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Ссылка на канал *</div>
+                <input type="text" class="modal__input" placeholder="https://www.youtube.com/@MrBeast">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Комментарий *</div>
+                <textarea class="modal__input modal__text" cols="30" rows="10">Текст...</textarea>
+            </div>
+            <input type="submit" class="btn">
+        </form>
+    </section>
+
+    <section class="modal__container" id="openModal_Collab">
+        <form class="modal__collaboration modal">
+            <div class="modal_header">
+                <h2>Подать заявку</h2>
+                <a class="modal_close" href="#">X</a>
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Имя и фамилия *</div>
+                <input type="text" class="modal__input" placeholder="Иванов Иван">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Ссылка для связи *</div>
+                <input type="text" class="modal__input" placeholder="https://web.telegram.org/a/#00000000">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Ссылка на канал *</div>
+                <input type="text" class="modal__input" placeholder="https://www.youtube.com/@MrBeast">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Укажите мессенджер для связи *</div>
+                <input type="text" class="modal__input" placeholder="Комментарий">
+            </div>
+            <input type="submit" class="btn" value="Отправить">
+        </form>
+    </section>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <div class="header__left">
+                    <div class="burger__menu">
+                        <div class="burger__menu__img">
+                            <svg width="29" height="18" viewBox="0 0 29 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 1.125C0 0.826631 0.127306 0.540483 0.353913 0.329505C0.580519 0.118526 0.887863 0 1.20833 0H27.7917C28.1121 0 28.4195 0.118526 28.6461 0.329505C28.8727 0.540483 29 0.826631 29 1.125C29 1.42337 28.8727 1.70952 28.6461 1.9205C28.4195 2.13147 28.1121 2.25 27.7917 2.25H1.20833C0.887863 2.25 0.580519 2.13147 0.353913 1.9205C0.127306 1.70952 0 1.42337 0 1.125ZM0 9C0 8.70163 0.127306 8.41548 0.353913 8.20451C0.580519 7.99353 0.887863 7.875 1.20833 7.875H27.7917C28.1121 7.875 28.4195 7.99353 28.6461 8.20451C28.8727 8.41548 29 8.70163 29 9C29 9.29837 28.8727 9.58452 28.6461 9.79549C28.4195 10.0065 28.1121 10.125 27.7917 10.125H1.20833C0.887863 10.125 0.580519 10.0065 0.353913 9.79549C0.127306 9.58452 0 9.29837 0 9ZM0 16.875C0 16.5766 0.127306 16.2905 0.353913 16.0795C0.580519 15.8685 0.887863 15.75 1.20833 15.75H27.7917C28.1121 15.75 28.4195 15.8685 28.6461 16.0795C28.8727 16.2905 29 16.5766 29 16.875C29 17.1734 28.8727 17.4595 28.6461 17.6705C28.4195 17.8815 28.1121 18 27.7917 18H1.20833C0.887863 18 0.580519 17.8815 0.353913 17.6705C0.127306 17.4595 0 17.1734 0 16.875Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+
+                        <div class="burger__accordion">
+                            <div class="container">
+                                <nav class="burger__accordion__body">
+                                    <a href="catalog.html" class="burger__link">
+                                        <div class="burger__img">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0 3C0 2.20435 0.316071 1.44129 0.87868 0.87868C1.44129 0.316071 2.20435 0 3 0H5.25C6.04565 0 6.80871 0.316071 7.37132 0.87868C7.93393 1.44129 8.25 2.20435 8.25 3V5.25C8.25 6.04565 7.93393 6.80871 7.37132 7.37132C6.80871 7.93393 6.04565 8.25 5.25 8.25H3C2.20435 8.25 1.44129 7.93393 0.87868 7.37132C0.316071 6.80871 0 6.04565 0 5.25V3ZM9.75 3C9.75 2.20435 10.0661 1.44129 10.6287 0.87868C11.1913 0.316071 11.9544 0 12.75 0H15C15.7956 0 16.5587 0.316071 17.1213 0.87868C17.6839 1.44129 18 2.20435 18 3V5.25C18 6.04565 17.6839 6.80871 17.1213 7.37132C16.5587 7.93393 15.7956 8.25 15 8.25H12.75C11.9544 8.25 11.1913 7.93393 10.6287 7.37132C10.0661 6.80871 9.75 6.04565 9.75 5.25V3ZM0 12.75C0 11.9544 0.316071 11.1913 0.87868 10.6287C1.44129 10.0661 2.20435 9.75 3 9.75H5.25C6.04565 9.75 6.80871 10.0661 7.37132 10.6287C7.93393 11.1913 8.25 11.9544 8.25 12.75V15C8.25 15.7956 7.93393 16.5587 7.37132 17.1213C6.80871 17.6839 6.04565 18 5.25 18H3C2.20435 18 1.44129 17.6839 0.87868 17.1213C0.316071 16.5587 0 15.7956 0 15V12.75ZM9.75 12.75C9.75 11.9544 10.0661 11.1913 10.6287 10.6287C11.1913 10.0661 11.9544 9.75 12.75 9.75H15C15.7956 9.75 16.5587 10.0661 17.1213 10.6287C17.6839 11.1913 18 11.9544 18 12.75V15C18 15.7956 17.6839 16.5587 17.1213 17.1213C16.5587 17.6839 15.7956 18 15 18H12.75C11.9544 18 11.1913 17.6839 10.6287 17.1213C10.0661 16.5587 9.75 15.7956 9.75 15V12.75Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </div>
+                                        <p class="banner__text burger__link_text">Каталог</p>
+
+                                    </a>
+
+                                    <a href="about.html" class="burger__link">
+                                        <div class="burger__img">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.788 1.21009C9.236 0.133094 10.764 0.133094 11.212 1.21009L13.294 6.21709L18.698 6.65009C19.862 6.74309 20.334 8.19509 19.447 8.95509L15.33 12.4821L16.587 17.7551C16.858 18.8911 15.623 19.7881 14.627 19.1801L10 16.3541L5.373 19.1801C4.377 19.7881 3.142 18.8901 3.413 17.7551L4.67 12.4821L0.553003 8.95509C-0.333998 8.19509 0.138003 6.74309 1.302 6.65009L6.706 6.21709L8.788 1.21009Z"
+                                                    fill="white" />
+                                            </svg>
+
+                                        </div>
+                                        <p class="banner__text burger__link_text">О нас</p>
+
+                                    </a>
+                                    <a href="reviews.html" class="burger__link">
+                                        <div class="burger__img">
+                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M2.804 18.644C3.1987 18.715 3.59897 18.7505 4 18.75C5.26747 18.7517 6.50959 18.395 7.583 17.721C8.357 17.903 9.167 18 10 18C15.322 18 19.75 14.03 19.75 9C19.75 3.97 15.322 0 10 0C4.678 0 0.25 3.97 0.25 9C0.25 11.409 1.275 13.587 2.924 15.192C3.156 15.418 3.201 15.62 3.178 15.735C3.05442 16.3571 2.77426 16.9373 2.364 17.421C2.27883 17.5215 2.22165 17.6428 2.19823 17.7724C2.17481 17.9021 2.18596 18.0357 2.23057 18.1597C2.27518 18.2836 2.35167 18.3937 2.45233 18.4787C2.553 18.5638 2.67429 18.6208 2.804 18.644ZM6.25 7.875C5.95163 7.875 5.66548 7.99353 5.4545 8.2045C5.24353 8.41548 5.125 8.70163 5.125 9C5.125 9.29837 5.24353 9.58452 5.4545 9.7955C5.66548 10.0065 5.95163 10.125 6.25 10.125C6.54837 10.125 6.83452 10.0065 7.0455 9.7955C7.25647 9.58452 7.375 9.29837 7.375 9C7.375 8.70163 7.25647 8.41548 7.0455 8.2045C6.83452 7.99353 6.54837 7.875 6.25 7.875ZM8.875 9C8.875 8.70163 8.99353 8.41548 9.2045 8.2045C9.41548 7.99353 9.70163 7.875 10 7.875C10.2984 7.875 10.5845 7.99353 10.7955 8.2045C11.0065 8.41548 11.125 8.70163 11.125 9C11.125 9.29837 11.0065 9.58452 10.7955 9.7955C10.5845 10.0065 10.2984 10.125 10 10.125C9.70163 10.125 9.41548 10.0065 9.2045 9.7955C8.99353 9.58452 8.875 9.29837 8.875 9ZM13.75 7.875C13.4516 7.875 13.1655 7.99353 12.9545 8.2045C12.7435 8.41548 12.625 8.70163 12.625 9C12.625 9.29837 12.7435 9.58452 12.9545 9.7955C13.1655 10.0065 13.4516 10.125 13.75 10.125C14.0484 10.125 14.3345 10.0065 14.5455 9.7955C14.7565 9.58452 14.875 9.29837 14.875 9C14.875 8.70163 14.7565 8.41548 14.5455 8.2045C14.3345 7.99353 14.0484 7.875 13.75 7.875Z"
+                                                    fill="#ED760E" />
+                                            </svg>
+                                        </div>
+                                        <p class="banner__text burger__link_text"><span>Отзывы</span></p>
+
+                                    </a>
+
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html"><span>Донат</span>.Оф</a>
+                    </div>
+                </div>
+                <nav class="links">
+                    <a class="link" href="index.html">
+                        Главная
+                        <span class="line"></span>
+                    </a>
+                    <a class="link" href="catalog.html">
+                        Каталог
+                    </a>
+                    <a class="link" href="about.html">
+                        О нас
+                    </a>
+                    <a class="link" href="reviews.html">
+                        Отзывы  
+                    </a>
+                    <a href="#openModal_Authoriz"><button class="btn">Войти</button></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__body">
+        <div class="banner__img_block">
+            <section class="banner">
+                <div class="container">
+                    <div class="banner__body">
+                        <h2 class="banner__title">Самый надёжный сайт для покупки доната в игре<br>
+                            <span class="banner__span"> Arena Breakout</span>
+                        </h2>
+                        <p class="banner__text">
+                            Здесь вы можете купить всё, что вам нужно.<br>
+                            Мы работаем только с официальным магазином. <br>
+                            Кроме того, для своих клиентов, <br>
+                            мы предлагаем самые низкие цены, <br>
+                            быструю доставку и доступные способы оплаты.
+                        </p>
+                        <div class="banner__buttons buttons">
+                            <a href="catalog.html" class="buttons__btn btn">Каталог</a>
+                            <a href="#openModal_Registr" class="buttons__btn btn buttons__btn_right">Регистрация</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__body">
+                    <h2>Отзывы</h2>
+                    <div class="reviews__items">
+                        <div class="reviews__item item">
+                            <div class="review__header">
+                                <div class="review__profile">
+                                    <img class="review__profile__img" src="img/profile/profile_icon.png" alt="#">
+                                    <p>MyLogin</p>
+                                </div>
+                                <div class="img"><img src="img/like.png" alt="#"></div>
+                            </div>
+                            <p>
+                                Данный сайт является венцом творения индустрии. Он содержит в себе самые
+                                полезные функции, а также один из самых прогрессивных дизайнов в этом мире.
+                            </p>
+                        </div>
+                        <div class="reviews__item item">
+                            <div class="review__header">
+                                <div class="review__profile">
+                                    <img class="review__profile__img" src="img/profile/profile_icon.png" alt="#">
+                                    <p>MyLogin</p>
+                                </div>
+                                <div class="img"><img src="img/like.png" alt="#"></div>
+                            </div>
+                            <p>
+                                Данный сайт является венцом творения индустрии. Он содержит в себе самые
+                                полезные функции, а также один из самых прогрессивных дизайнов в этом мире.
+                            </p>
+                        </div>
+                        <div class="reviews__item item">
+                            <div class="review__header">
+                                <div class="review__profile">
+                                    <img class="review__profile__img" src="img/profile/profile_icon.png" alt="#">
+                                    <p>MyLogin</p>
+                                </div>
+                                <div class="img"><img src="img/like.png" alt="#"></div>
+                            </div>
+                            <p>
+                                Данный сайт является венцом творения индустрии. Он содержит в себе самые
+                                полезные функции, а также один из самых прогрессивных дизайнов в этом мире.
+                            </p>
+                        </div>
+                        <div class="reviews__item item">
+                            <div class="review__header">
+                                <div class="review__profile">
+                                    <img class="review__profile__img" src="img/profile/profile_icon.png" alt="#">
+                                    <p>MyLogin</p>
+                                </div>
+                                <div class="img"><img src="img/like.png" alt="#"></div>
+                            </div>
+                            <p>
+                                Данный сайт является венцом творения индустрии. Он содержит в себе самые
+                                полезные функции, а также один из самых прогрессивных дизайнов в этом мире.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collaboration" id="collaboration">
+            <div class="container">
+                <div class="collaboration__body">
+                    <div class="collaboration__content">
+                        <h2>
+                            Вы <span>блогер</span> или <span>админ</span> сообщества?
+                        </h2>
+
+                        <p class="banner__text">
+                            Начните зарабатывать рекламируя наш проект. <br>
+                            Подайте заявку и мы свяжемся с вами, <br>
+                            чтобы обсудить условия сотрудничества.
+                        </p>
+
+                        <div class="collaboration buttons">
+                            <a href="#openModal_Collab" class="buttons__btn btn">Подать заявку</a>
+                            <a href="#openModal_Registr" class="buttons__btn btn buttons__btn_right">Регистрация</a>
+                        </div>
+
+                    </div>
+                    <div class="collaboration__img">
+                        <img class="collaboration__img" src="img/collaboration.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__body">
+                <div class="logo">
+                    <a href="index.html"><span>Донат</span>.Оф</a>
+                </div>
+                <div class="footer__text__content">
+                    <p class="footer__title">
+                        Самый надёжный сайт для покупки доната в игре Arena Breakout
+                    </p>
+
+                    <p class="footer__text">
+                        Здесь вы можете купить всё, что вам нужно, не беспокоясь о безопасности аккаунта.<br>
+                        Мы работаем только с официальным магазином. <br>
+                        Кроме того, для своих клиентов, мы предлагаем самые низкие цены, <br>
+                        быструю доставку и доступные способы оплаты.
+                    </p>
+
+
+                </div>
+                <div class="footer__navs">
+                    <div class="footer__title">Покупателям</div>
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__text">О нас</a>
+                        <a href="#" class="footer__text">Отзывы</a>
+                        <a href="#" class="footer__text">Поддержка</a>
+                    </nav>
+                </div>
+                <div class="footer__navs">
+                    <div class="footer__title">Сотрудничество</div>
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__text">Сотрудничество</a>
+                        <a href="#" class="footer__text">Отзывы</a>
+                        <a href="#" class="footer__text">Регистрация</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
